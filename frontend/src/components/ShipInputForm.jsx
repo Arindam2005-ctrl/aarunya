@@ -22,7 +22,7 @@ export default function ShipInputForm({ onResult }) {
     try {
       setLoading(true);
 
-      const res = await fetch("http://localhost:3000/api/get-ship-data", {
+      const res = await fetch("https://aarunya-backend-wv7b.onrender.com/api/get-ship-data", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

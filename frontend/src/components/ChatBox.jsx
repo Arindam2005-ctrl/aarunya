@@ -25,7 +25,7 @@ export default function ChatBox({ shipData }) {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:3000/api/chat/ask", {
+      const res = await fetch("https://aarunya-backend-wv7b.onrender.com/api/chat/ask", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
